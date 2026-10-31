@@ -1,0 +1,38 @@
+{
+  "project": "Post and Paid",
+  "checkedAtUtc": "2026-10-31T03:59:21.332325+00:00",
+  "v1": {
+    "url": "http://localhost:3106/",
+    "status": "PASS — gerçek payout ve dört gerçek ret korunuyor",
+    "baselineCommit": "3dac6e4a397c9719c8e05c6639550a0260ce040d"
+  },
+  "v2": {
+    "url": "http://localhost:3106/next",
+    "status": "Mühendislik hazır; gerçek creator pilotu PENDING",
+    "commit": "3fe3eda9cd06b8b6c5b1106e073f1bf582a93a24"
+  },
+  "changes": [
+    "Tam şartlara creator EIP-712 rızası.",
+    "Exact author/post/nonce/beneficiary intake.",
+    "Ayrı executor, factory ve kayıtlar; V1 korunuyor."
+  ],
+  "verified": [
+    "evidence/v2/wallet-consent.json",
+    "evidence/v2/missing-challenge.json",
+    "evidence/v2/deployment-verification.json",
+    "evidence/v2/typescript-tests.txt (59 PASS)",
+    "evidence/v2/contract-tests.txt (81 PASS)",
+    "evidence/v2/build.txt",
+    "evidence/v2/browser-qa.json",
+    "evidence/v2/v1-regression.json"
+  ],
+  "pending": [
+    "Creator kendi hesabında challenge yayımlar ve post ID verir; gerçek V2 intake/funding/payout ve canlı qualification dizisi bekliyor.",
+    "150sn video ve Devfolio başvurusu."
+  ],
+  "recommendation": {
+    "version": "V1",
+    "reason": "V1 gerçek uçtan uca ödemeyi ve dört gerçek revert kaydını tamamladı. V2 daha güçlü rıza akışı sunuyor; yeni insan paylaşımıyla pilotu henüz yok.",
+    "demoRisk": "low"
+  }
+}

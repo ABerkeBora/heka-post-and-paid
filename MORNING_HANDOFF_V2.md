@@ -4,7 +4,7 @@
 
 - **V1:** http://localhost:3106/ — tamamlanmış tarihsel kaynak/ödeme akışı.
 - **V2:** http://localhost:3106/next — creator consent + yeni post intake akışı.
-- **Repo:** https://github.com/ABerkeBora/heka-post-and-paid ; V2 branch `codex/next`.
+- **Repo:** https://github.com/ABerkeBora/heka-post-and-paid ; V2 branch `codex/next`, uygulama commit `3fe3eda9cd06b8b6c5b1106e073f1bf582a93a24`.
 - **V1 baseline:** `3dac6e4a397c9719c8e05c6639550a0260ce040d`, kayıpsız `v1-baseline` tag'i. BASELINE_V1.md çalışma komutlarını, contract'ları ve eski veri/kanıt konumlarını kaydediyor.
 
 ## V1–V2 farkı ve öneri
