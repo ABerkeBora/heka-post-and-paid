@@ -1,0 +1,13 @@
+{
+  "verifiedAt": "2026-10-31T03:07:40.145640+00:00",
+  "repository": "https://github.com/ABerkeBora/heka-post-and-paid",
+  "visibility": "PUBLIC",
+  "branch": "codex/build",
+  "verifiedSourceCommit": "d06ddfaee7231a29b7759b252f97f490c7029623",
+  "defaultBranch": "codex/build",
+  "authorLogin": "ABerkeBora",
+  "authorEmail": "23353551+ABerkeBora@users.noreply.github.com",
+  "committerMatchesAuthor": true,
+  "pushSucceeded": true,
+  "privateRuntimeFilesPublished": false
+}

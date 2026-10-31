@@ -3,7 +3,7 @@
 **Yerel ürün ve gerçek ödeme akışı incelemeye hazır.** İnceleme hedefi 31 Ekim 08.00–09.00 Europe/Berlin; iş erken tamamlandı. Yarışma başvurusu henüz tamamlanmış değildir: video ve Devfolio teslimi aşağıda PENDING.
 
 - Aç: **http://127.0.0.1:3106** — production server çalışıyor.
-- Repo: https://github.com/ABerkeBora/heka-post-and-paid — source push son doğrulaması bekleniyor.
+- Repo: https://github.com/ABerkeBora/heka-post-and-paid — public kaynak ve push doğrulandı; default branch `codex/build`.
 - Yeniden başlat: proje kökünde `npm start`. İlk kurulum: `npm ci`, `forge build`, `npm run build`; README tam ve bağımsız.
 - UI İngilizce. Anahtarlar ve kalıcı intent kayıtları ignored yerel dosyalarda; repoya taşınmadı. Test ağından başka ağ veya gerçek değer harcaması yok.
 
@@ -48,7 +48,7 @@ Toplam kayıtlı dış veri gideri: **0.03 test aUSD** (bir source preflight + i
 | --- | --- | --- |
 | En çok 2.5 dakikalık video | **PENDING** — yarışmanın video teslim şartı karşılanmadı | SUBMISSION.md 2:30 planıyla gerçek akış ve dört receipt'i kaydet, URL ekle. Yaklaşık 10–15 dk. |
 | Devfolio entry ve metin | **PENDING** — taslak hazır, başvuru gönderilmedi | Kullanıcının seçtiği tek takım adayı için metni/video/repo/contract bağlantılarını Devfolio'ya yerleştir; ayrıca gönderim yetkisi gerekir. Yaklaşık 5–10 dk. |
-| Public source push son doğrulaması | **PENDING** | Teslimin son teknik adımı; push ardından bu satır güncellenecek. |
+| Public source push | **PASS** | `codex/build`, ABerkeBora author/committer ve PUBLIC görünürlük doğrulandı. |
 
 Resmî API3 sekmesi ve genel şartlar **04.02 Europe/Berlin** yeniden okundu. Yayımlanan deadline **31 Ekim 15.00 Europe/Berlin**; takım başına tek entry, en çok üç partner track. Teknik kanıtlar PASS olsa da video/entry tamamlanmadan tüm yarışma şartlarının sağlandığı söylenmiyor. Kriter tablosu TRACK_REQUIREMENTS.md'de.
 

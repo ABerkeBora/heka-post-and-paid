@@ -40,7 +40,7 @@ Ana anlaşma freshness sınırı **300 saniye**. Dört canlı ret işlemi aynı 
 | Contract adresi ve ağ | README; evidence/deployment-check.json; Base Sepolia 84532 | PASS |
 | Jürinin kendi response'unu sunabilmesi | UI Submit proof; scripts/submit-proof.ts; README, --check-only --contract; permissionless ABI | PASS |
 | Veri kullanıcıları, forgery etkisi ve bulunamayan veri açıklaması | SUBMISSION.md; continuous publication, upstream observation time ve account-wallet proof sınırları açık | PASS (taslak) |
-| Public kaynak ve setup/run README | Repo oluşturuldu; source push doğrulaması teslimin son adımı | PENDING |
+| Public kaynak ve setup/run README | [Public repo](https://github.com/ABerkeBora/heka-post-and-paid); codex/build push ve default branch doğrulandı; evidence/github-publication.json | PASS |
 | En çok 2.5 dakikalık videoda pozitif akış + dört ret | SUBMISSION.md 2:30 akış ve gerçek receipt'ler hazır; video kaydı yapılmadı | PENDING |
 | Devfolio'da detaylı proje açıklaması ve entry | İngilizce metin taslağı SUBMISSION.md; kullanıcı adına başvuru gönderilmedi | PENDING |
 | Deadline ve takım kapsamı | 31 Ekim 2026 15.00 Europe/Berlin tekrar doğrulandı; takım başına tek entry, en çok üç partner track | PASS (kural kontrolü) |
