@@ -1,0 +1,22 @@
+{
+  "startCheckedAt": "2026-10-31T03:40:00+01:00",
+  "finishCheckedAt": "2026-10-31T04:02:00+01:00",
+  "selectedTrack": "API3 \u2014 Any API in your contract",
+  "tabSelectedInBrowser": true,
+  "sectionsExpanded": [
+    "About",
+    "What to submit",
+    "What judges look for",
+    "Example ideas"
+  ],
+  "generalRulesRead": true,
+  "deadline": "2026-10-31T15:00:00+01:00",
+  "oneEntryPerTeam": true,
+  "videoMaxSeconds": 150,
+  "changesObserved": false,
+  "sources": [
+    "https://hackathon.tum-blockchain.com/prizes#api3",
+    "https://hackathon.tum-blockchain.com/prizes#how-to-submit"
+  ],
+  "recordedAt": "2026-10-31T04:05:29.363446+01:00"
+}

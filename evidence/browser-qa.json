@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-10-31T03:03:41.563Z",
+  "url": "http://127.0.0.1:3106",
+  "mode": "production",
+  "tool": "supported CUA browser",
+  "inspectorSubstitution": "inspect.mjs would automate the browser outside the authorized CUA route. Used real CUA screenshots and read-only DOM measurements instead.",
+  "screens": [
+    {
+      "colors": {
+        "ground": "#f6f2f1",
+        "muted": "#6d6265",
+        "text": "#252021"
+      },
+      "fontLoaded": true,
+      "gradients": 0,
+      "headings": [
+        {
+          "text": "A post, with proof of delivery",
+          "y": 102.3984375
+        },
+        {
+          "text": "The post",
+          "y": 245.5390625
+        },
+        {
+          "text": "Acceptance rules",
+          "y": 524.15625
+        },
+        {
+          "text": "Creator fee",
+          "y": 245.5390625
+        },
+        {
+          "text": "Agent mandate",
+          "y": 500.78125
+        },
+        {
+          "text": "Payment trail",
+          "y": 835.71875
+        },
+        {
+          "text": "Proof verification",
+          "y": 1135.3125
+        }
+      ],
+      "height": 900,
+      "scrollWidth": 1440,
+      "smallText": 0,
+      "width": 1440
+    },
+    {
+      "fontLoaded": true,
+      "height": 1024,
+      "scrollWidth": 768,
+      "smallText": 0,
+      "width": 768
+    },
+    {
+      "fontLoaded": true,
+      "height": 844,
+      "scrollWidth": 390,
+      "smallText": 0,
+      "width": 390
+    }
+  ],
+  "contrast": {
+    "textOnGround": 14.450105070592116,
+    "mutedOnGround": 5.2687225570736995,
+    "mutedOnWhite": 5.857361419897139
+  },
+  "walkthrough": [
+    "New agreement preserved old chain history",
+    "Fund agreement confirmed a real deployed escrow",
+    "Mandate cap preview before authorization",
+    "One Start procurement agent click led to paid snapshot and confirmed creator payout",
+    "Payment trail inspected on phone",
+    "Malformed proof rejected with visible inline feedback",
+    "Recorded rejection cases carry original timestamp and contract link"
+  ],
+  "fixed": [
+    "Phone header overflow:414px to390px",
+    "Desktop receipt header and first row moved into900px viewport",
+    "Tablet panels below340px stack at820px breakpoint",
+    "Gas display uses12 decimals with exactwei tooltip"
+  ],
+  "notes": [
+    "No page overflow at all three widths",
+    "DM Sans loaded at all three widths",
+    "No text below11px",
+    "No gradients",
+    "Primary action controls and phone icon targets checked",
+    "Two lint warning categories retained (four occurrences) for literal IDs/code and missing-value dash marks"
+  ]
+}

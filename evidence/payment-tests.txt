@@ -1,0 +1,45 @@
+
+> post-and-paid@0.1.0 test
+> tsx --test server/*.test.ts
+
+✔ accepts the exact priced operation within remaining action and API budgets (0.8145ms)
+✔ accepts address casing differences without widening the recipient or asset (0.1385ms)
+✔ rejects a mainnet payment requirement (0.121375ms)
+✔ rejects a mandate with the wrong network even when the challenge is correct (0.061708ms)
+✔ rejects a different payment asset (0.074542ms)
+✔ rejects a mutated mandate asset (0.057084ms)
+✔ rejects a different service recipient (0.06375ms)
+✔ rejects a mutated mandate service recipient (0.053959ms)
+✔ rejects a per-call overcharge by one integer unit (0.060334ms)
+✔ rejects a fee that would exceed the remaining total budget (0.101084ms)
+✔ rejects zero, negative and non-integer fee amounts (0.09825ms)
+✔ rejects the next call when the action cap is exhausted (0.05075ms)
+✔ rejects an expired mandate without authorizing another charge (0.051709ms)
+✔ completed paid intent can be reused without creating a second authorization (0.138875ms)
+✔ a cached HTTP200 body without a settlement is never a paid result (0.057542ms)
+✔ a cached HTTP200 body with failed settlement is never a paid result (0.050833ms)
+✔ successful settlement does not turn a cached HTTP error into a delivered snapshot (0.049791ms)
+✔ successful settlement with an empty response is not a reusable result (0.046833ms)
+✔ a cached unsigned error object is not a signed envelope (0.044875ms)
+✔ accepts a confirmed exact aUSD transfer from the payer to the pinned service (3.313292ms)
+✔ rejects a reverted receipt even if it contains superficially matching logs (0.785458ms)
+✔ rejects a successful transaction with no token transfer (0.062959ms)
+✔ rejects an otherwise matching event from another token contract (0.115792ms)
+✔ rejects a transfer charged to another payer (0.222625ms)
+✔ rejects a transfer to another recipient (0.18525ms)
+✔ rejects a transfer with an incorrect integer amount (0.310833ms)
+✔ ignores unrelated logs and finds the actual matching payment event (0.601583ms)
+✔ rejects a mandate whose previously reserved API budget leaves insufficient funds (0.090375ms)
+✔ rejects an inactive mandate before signing a fee authorization (0.043ms)
+✔ a settlement header alone does not make cached data a paid result (0.055333ms)
+✔ completed cached evidence remains readable after expiry without authorizing new spend (0.055958ms)
+✔ an unresolved intent cannot replay an authorization after mandate expiry (0.041459ms)
+✔ an unresolved intent cannot replay an authorization under an inactive mandate (0.042ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1906.063542

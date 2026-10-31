@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-31T02:42:02.705Z",
+  "request": {
+    "operation": "tweetsByIds",
+    "parameters": {
+      "tweet_ids": "20"
+    }
+  },
+  "expectedSigner": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+  "envelope": {
+    "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+    "requestHash": "0xf26aaa60d433296a66431ed6ad66b07195c12d94a8127acf249a18ecec42bd43",
+    "timestamp": "1793414522",
+    "data": "{\"tweets\":[{\"type\":\"tweet\",\"id\":\"20\",\"url\":\"https://x.com/jack/status/20\",\"twitterUrl\":\"https://twitter.com/jack/status/20\",\"text\":\"just setting up my twttr\",\"source\":\"\",\"retweetCount\":124545,\"replyCount\":18116,\"likeCount\":309418,\"quoteCount\":7366,\"viewCount\":0,\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"lang\":\"en\",\"bookmarkCount\":21970,\"isReply\":false,\"inReplyToId\":\"\",\"conversationId\":\"20\",\"displayTextRange\":[0,24],\"inReplyToUserId\":\"\",\"inReplyToUsername\":\"\",\"isPinned\":false,\"author\":{\"type\":\"user\",\"userName\":\"jack\",\"url\":\"https://x.com/jack\",\"twitterUrl\":\"https://twitter.com/jack\",\"id\":\"12\",\"name\":\"jack\",\"isVerified\":false,\"isBlueVerified\":true,\"verifiedType\":null,\"profilePicture\":\"https://pbs.twimg.com/profile_images/1661201415899951105/azNjKOSH_normal.jpg\",\"coverPicture\":\"https://pbs.twimg.com/profile_banners/12/1742427520\",\"description\":\"no state is the best state\",\"location\":\"\",\"followers\":12492610,\"following\":3,\"status\":\"\",\"canDm\":true,\"canMediaTag\":true,\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"entities\":{\"description\":{},\"url\":{\"urls\":[{\"display_url\":\"primal.net/jack\",\"expanded_url\":\"http://primal.net/jack\",\"indices\":[0,23],\"url\":\"https://t.co/ZEpOg6rn5L\"}]}},\"fastFollowersCount\":0,\"favouritesCount\":41107,\"hasCustomTimelines\":true,\"isTranslator\":false,\"mediaCount\":2976,\"statusesCount\":31121,\"withheldInCountries\":[],\"affiliatesHighlightedLabel\":{\"label\":{\"badge\":{\"url\":\"https://pbs.twimg.com/profile_images/1285655593592791040/HtwPZgej_bigger.jpg\"},\"description\":\"Square\",\"url\":{\"url\":\"https://twitter.com/Square\",\"url_type\":\"DeepLink\"},\"user_label_display_type\":\"Badge\",\"user_label_type\":\"BusinessLabel\"}},\"possiblySensitive\":false,\"pinnedTweetIds\":[\"1833951636005552366\"],\"profile_bio\":{\"description\":\"no state is the best state\",\"entities\":{\"description\":{},\"url\":{\"urls\":[{\"display_url\":\"primal.net/jack\",\"expanded_url\":\"http://primal.net/jack\",\"indices\":[0,23],\"url\":\"https://t.co/ZEpOg6rn5L\"}]}}},\"isAutomated\":false,\"automatedBy\":null},\"extendedEntities\":{},\"card\":null,\"place\":{},\"entities\":{},\"isRetweet\":false,\"isQuote\":false,\"isConversationControlled\":false,\"quoted_tweet\":null,\"retweeted_tweet\":null,\"isLimitedReply\":false,\"communityInfo\":null}],\"status\":\"success\",\"msg\":\"success\",\"code\":0}",
+    "signature": "0xf49b5bf217534777c350df194197fc443d321a9ae007802947b0d798006b9ebd104202d7e90b76bf709d0395a73a0f3980242ba2b8a50cf8ad7bd7d92e2cd3321c"
+  },
+  "settlement": {
+    "success": true,
+    "transaction": "0xe652a8090f5fe35bce01d94ec5421bc7f0e34c3c580371dbeca23a6ecd3567f3",
+    "network": "eip155:84532",
+    "payer": "0x38ae0a11117d3cd0a86f38ede2c205ae1842f48d"
+  }
+}

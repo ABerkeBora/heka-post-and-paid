@@ -1,0 +1,13 @@
+
+> post-and-paid@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.31 kB
+dist/assets/index-DuZo77ND.css   26.06 kB │ gzip:  5.31 kB
+dist/assets/index-Bv-Ujrgn.js   217.17 kB │ gzip: 67.80 kB
+✓ built in 507ms

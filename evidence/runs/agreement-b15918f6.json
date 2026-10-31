@@ -1,0 +1,198 @@
+{
+  "recordedAt": "2026-10-31T02:55:47.668Z",
+  "network": {
+    "name": "Base Sepolia",
+    "chainId": 84532
+  },
+  "campaign": {
+    "id": "agreement-b15918f6",
+    "title": "A post, with proof of delivery",
+    "postId": "20",
+    "authorId": "12",
+    "campaignCode": "twttr",
+    "creator": "0xA190f64Ef1CCfa7DC111A13D6ed8620991a37f01",
+    "brand": "0xcCE2826195F41f6D5271493B3dD7c72B10C9Be7e",
+    "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+    "payoutWei": "10000000000000",
+    "postedAfter": 1142971200,
+    "postedBefore": 1142974800,
+    "claimDeadline": 1793501701,
+    "maxResponseAge": 300,
+    "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80"
+  },
+  "deployment": {
+    "address": "0x7d4f7f937cc3e2f3e39c87418d2c51355100a240",
+    "transactionHash": "0x77ddce6e5bca029b54494771ee5b3d7ae020a02a8cabe1ab52603fa297fab19a",
+    "blockNumber": "52467236"
+  },
+  "mandate": {
+    "id": "agreement-b15918f6-mandate",
+    "status": "completed",
+    "apiPerCallUnits": "10000",
+    "apiTotalUnits": "10000",
+    "apiSpentUnits": "10000",
+    "maxActions": 1,
+    "actionsUsed": 1,
+    "gasCapWei": "50000000000000",
+    "gasTotalCapWei": "100000000000000",
+    "gasSpentWei": "1084122001798",
+    "expiresAt": 1793417134,
+    "recipient": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+    "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+    "network": "eip155:84532",
+    "beneficiary": "0xA190f64Ef1CCfa7DC111A13D6ed8620991a37f01",
+    "contract": "0x7d4f7f937cc3e2f3e39c87418d2c51355100a240"
+  },
+  "proposal": {
+    "action": "purchase_snapshot",
+    "reason": "Funded creator agreement agreement-b15918f6 has an available API budget (remaining API units: 10000), so purchase_snapshot is chosen. No destinations or other (",
+    "model": "qwen3:4b",
+    "durationMs": 7927,
+    "at": "2026-10-31T02:55:42.776Z"
+  },
+  "snapshot": {
+    "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+    "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+    "timestamp": "1793415344",
+    "data": "{\"authorId\":\"12\",\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"postId\":\"20\",\"text\":\"just setting up my twttr\"}",
+    "signature": "0x4a908a3750a26c96d356bfe4eee4d4154490bdbab4d6bd8a046482b1a38bf3cc56436ea86ad6bc47bd9fc90a00f07d44f96e09aa1daff615f945d828974b035f1b",
+    "authorId": "12",
+    "createdAt": "Tue Mar 21 20:50:14 +0000 2006",
+    "postId": "20",
+    "text": "just setting up my twttr",
+    "verified": true,
+    "sourceUrl": "https://x.com/i/status/20"
+  },
+  "receipts": [
+    {
+      "kind": "funding",
+      "title": "Brand funded the agreement",
+      "amount": "10000000000000",
+      "asset": "testETH",
+      "transactionHash": "0x77ddce6e5bca029b54494771ee5b3d7ae020a02a8cabe1ab52603fa297fab19a",
+      "status": "confirmed",
+      "detail": "Fixed creator fee locked in an immutable agreement.",
+      "at": "2026-10-31T02:55:16.455Z"
+    },
+    {
+      "kind": "data",
+      "title": "Agent bought the signed snapshot",
+      "amount": "10000",
+      "asset": "aUSD",
+      "transactionHash": "0xabd1b156afc1f05cc500aa77d1adea3d7ff95c7c2caf68c0c640f62fdcb95d02",
+      "status": "confirmed",
+      "detail": "Paid TwitterAPI snapshot. This fee is separate from the creator fee.",
+      "at": "2026-10-31T02:55:44.751Z"
+    },
+    {
+      "kind": "payout",
+      "title": "Creator received the agreed fee",
+      "amount": "10000000000000",
+      "asset": "testETH",
+      "transactionHash": "0x48c5ac28cd66f42f18e139586cba38783c3e6cbea59337469df1132ace66edff",
+      "status": "confirmed",
+      "detail": "Agent submitted the signed snapshot; the contract paid the fixed beneficiary.",
+      "at": "2026-10-31T02:55:47.666Z"
+    }
+  ],
+  "payoutEvidence": {
+    "creatorBeforeWei": "1010000000000000",
+    "creatorAfterWei": "1020000000000000",
+    "deltaWei": "10000000000000",
+    "blockNumber": "52467392",
+    "transactionHash": "0x48c5ac28cd66f42f18e139586cba38783c3e6cbea59337469df1132ace66edff"
+  },
+  "checks": [
+    {
+      "name": "Trusted source signature",
+      "status": "pass",
+      "detail": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB"
+    },
+    {
+      "name": "Exact post request",
+      "status": "pass",
+      "detail": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80"
+    },
+    {
+      "name": "Post and author identity",
+      "status": "pass",
+      "detail": "Post 20 · author 12"
+    },
+    {
+      "name": "Campaign code",
+      "status": "pass",
+      "detail": "twttr"
+    },
+    {
+      "name": "Creation window and fresh snapshot",
+      "status": "pass",
+      "detail": "Tue Mar 21 20:50:14 +0000 2006"
+    }
+  ],
+  "events": [
+    {
+      "id": "1793415316457-0",
+      "title": "Agreement funded",
+      "detail": "The creator, fee, post, source and time rules are now fixed.",
+      "status": "confirmed",
+      "at": "2026-10-31T02:55:16.457Z"
+    },
+    {
+      "id": "1793415334848-1",
+      "title": "Procurement mandate accepted",
+      "detail": "One snapshot, up to 0.01 aUSD, with fixed service recipient and creator beneficiary.",
+      "status": "confirmed",
+      "at": "2026-10-31T02:55:34.848Z"
+    },
+    {
+      "id": "1793415342777-2",
+      "title": "Agent selected the post snapshot",
+      "detail": "Funded creator agreement agreement-b15918f6 has an available API budget (remaining API units: 10000), so purchase_snapshot is chosen. No destinations or other (",
+      "status": "confirmed",
+      "at": "2026-10-31T02:55:42.778Z"
+    },
+    {
+      "id": "1793415344752-3",
+      "title": "Signed snapshot received",
+      "detail": "The paid response is stored under the same intent before verification.",
+      "status": "confirmed",
+      "at": "2026-10-31T02:55:44.752Z"
+    },
+    {
+      "id": "1793415345043-4",
+      "title": "Validator approved the exact proof",
+      "detail": "Pinned signer, request, post, author, campaign code and timing checks passed in the deployed contract.",
+      "status": "confirmed",
+      "at": "2026-10-31T02:55:45.043Z"
+    },
+    {
+      "id": "1793415347667-5",
+      "title": "Creator paid",
+      "detail": "Signed delivery matched the pinned agreement. This agreement cannot pay again.",
+      "status": "confirmed",
+      "at": "2026-10-31T02:55:47.667Z"
+    }
+  ],
+  "transactionCosts": {
+    "funding": {
+      "transactionHash": "0x77ddce6e5bca029b54494771ee5b3d7ae020a02a8cabe1ab52603fa297fab19a",
+      "status": "success",
+      "executionFeeWei": "16343922000000",
+      "l1FeeWei": "64602",
+      "operatorFeeWei": "0",
+      "gasCostWei": "16343922064602",
+      "gasScope": "Application preflight budget: signed L2 execution maximum plus twice the current L1 data and operator fee quotes. L1/operator pricing can change before inclusion; this is not an on-chain total-fee cap.",
+      "gasAccountingComplete": true
+    },
+    "payout": {
+      "transactionHash": "0x48c5ac28cd66f42f18e139586cba38783c3e6cbea59337469df1132ace66edff",
+      "status": "success",
+      "executionFeeWei": "1084122000000",
+      "l1FeeWei": "1798",
+      "operatorFeeWei": "0",
+      "gasCostWei": "1084122001798",
+      "gasScope": "Application preflight budget: signed L2 execution maximum plus twice the current L1 data and operator fee quotes. L1/operator pricing can change before inclusion; this is not an on-chain total-fee cap.",
+      "gasAccountingComplete": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-31T03:02:25.725Z",
+  "campaignId": "agreement-b15918f6",
+  "freshProcess": true,
+  "blocked": true,
+  "error": "Agreement already settled; duplicate agent action blocked.",
+  "before": {
+    "apiPayerUnits": "970000",
+    "creatorWei": "1020000000000000",
+    "escrowWei": "0"
+  },
+  "after": {
+    "apiPayerUnits": "970000",
+    "creatorWei": "1020000000000000",
+    "escrowWei": "0"
+  }
+}

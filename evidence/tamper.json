@@ -1,0 +1,161 @@
+{
+  "checkedAt": "2026-10-31T02:47:57.080Z",
+  "network": {
+    "name": "Base Sepolia",
+    "chainId": 84532
+  },
+  "main": {
+    "address": "0xffb396146f2443210b93ecb98c122e6a52484117",
+    "transactionHash": "0xf8ac5ed8e7461927543433d6b316a1442b044ff2a251b53601cf9d558057fda9",
+    "blockNumber": "52464741"
+  },
+  "guard": {
+    "address": "0x6521a71146897ddb6f6f7ea98c095914a03fc8f0",
+    "transactionHash": "0xd56126fb480d67c678e63e69b90caf27121a0b4f7c68143dbc1c50356bfa008f",
+    "campaign": {
+      "id": "agreement-1b0bda02",
+      "title": "A post, with proof of delivery",
+      "postId": "20",
+      "authorId": "12",
+      "campaignCode": "twttr",
+      "creator": "0xA190f64Ef1CCfa7DC111A13D6ed8620991a37f01",
+      "brand": "0xcCE2826195F41f6D5271493B3dD7c72B10C9Be7e",
+      "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+      "payoutWei": "1000000000",
+      "postedAfter": 1142971200,
+      "postedBefore": 1142974800,
+      "claimDeadline": 1793414997,
+      "maxResponseAge": 30,
+      "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80"
+    }
+  },
+  "before": {
+    "state": 0,
+    "balanceWei": "1000000000"
+  },
+  "after": {
+    "state": 0,
+    "balanceWei": "1000000000"
+  },
+  "results": [
+    {
+      "name": "Edited value",
+      "status": "pass",
+      "detail": "NotSignedByAirnode. Funded escrow and payout state unchanged.",
+      "transactionHash": "0x5d9944051138f0ecb0eed536a967b5ac15e740ae59b2955e38f72b6e2539a43b",
+      "before": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "after": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "response": {
+        "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+        "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+        "timestamp": "1793414831",
+        "data": "{\"authorId\":\"12\",\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"postId\":\"20\",\"text\":\"forged setting up my twttr\"}",
+        "signature": "0xedb31ebd1e0a025b69f672e695f563504fffea0b6fb6140374fe82628741e52f3d91d85e2b81069db752688e102c0afa4ede065f3dad1e54395bbf0a5398596c1b"
+      },
+      "gasCostWei": "195222002119",
+      "executionFeeWei": "195222000000",
+      "l1FeeWei": "2119",
+      "operatorFeeWei": "0"
+    },
+    {
+      "name": "Different request",
+      "status": "pass",
+      "detail": "NotSignedByAirnode. Funded escrow and payout state unchanged.",
+      "transactionHash": "0x33d527055dbeb5c60ef9d7b8518443ff5b58d01d24edf3ffc907e66d85a31630",
+      "before": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "after": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "response": {
+        "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+        "requestHash": "0xf26aaa60d433296a66431ed6ad66b07195c12d94a8127acf249a18ecec42bd43",
+        "timestamp": "1793414522",
+        "data": "{\"tweets\":[{\"type\":\"tweet\",\"id\":\"20\",\"url\":\"https://x.com/jack/status/20\",\"twitterUrl\":\"https://twitter.com/jack/status/20\",\"text\":\"just setting up my twttr\",\"source\":\"\",\"retweetCount\":124545,\"replyCount\":18116,\"likeCount\":309418,\"quoteCount\":7366,\"viewCount\":0,\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"lang\":\"en\",\"bookmarkCount\":21970,\"isReply\":false,\"inReplyToId\":\"\",\"conversationId\":\"20\",\"displayTextRange\":[0,24],\"inReplyToUserId\":\"\",\"inReplyToUsername\":\"\",\"isPinned\":false,\"author\":{\"type\":\"user\",\"userName\":\"jack\",\"url\":\"https://x.com/jack\",\"twitterUrl\":\"https://twitter.com/jack\",\"id\":\"12\",\"name\":\"jack\",\"isVerified\":false,\"isBlueVerified\":true,\"verifiedType\":null,\"profilePicture\":\"https://pbs.twimg.com/profile_images/1661201415899951105/azNjKOSH_normal.jpg\",\"coverPicture\":\"https://pbs.twimg.com/profile_banners/12/1742427520\",\"description\":\"no state is the best state\",\"location\":\"\",\"followers\":12492610,\"following\":3,\"status\":\"\",\"canDm\":true,\"canMediaTag\":true,\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"entities\":{\"description\":{},\"url\":{\"urls\":[{\"display_url\":\"primal.net/jack\",\"expanded_url\":\"http://primal.net/jack\",\"indices\":[0,23],\"url\":\"https://t.co/ZEpOg6rn5L\"}]}},\"fastFollowersCount\":0,\"favouritesCount\":41107,\"hasCustomTimelines\":true,\"isTranslator\":false,\"mediaCount\":2976,\"statusesCount\":31121,\"withheldInCountries\":[],\"affiliatesHighlightedLabel\":{\"label\":{\"badge\":{\"url\":\"https://pbs.twimg.com/profile_images/1285655593592791040/HtwPZgej_bigger.jpg\"},\"description\":\"Square\",\"url\":{\"url\":\"https://twitter.com/Square\",\"url_type\":\"DeepLink\"},\"user_label_display_type\":\"Badge\",\"user_label_type\":\"BusinessLabel\"}},\"possiblySensitive\":false,\"pinnedTweetIds\":[\"1833951636005552366\"],\"profile_bio\":{\"description\":\"no state is the best state\",\"entities\":{\"description\":{},\"url\":{\"urls\":[{\"display_url\":\"primal.net/jack\",\"expanded_url\":\"http://primal.net/jack\",\"indices\":[0,23],\"url\":\"https://t.co/ZEpOg6rn5L\"}]}}},\"isAutomated\":false,\"automatedBy\":null},\"extendedEntities\":{},\"card\":null,\"place\":{},\"entities\":{},\"isRetweet\":false,\"isQuote\":false,\"isConversationControlled\":false,\"quoted_tweet\":null,\"retweeted_tweet\":null,\"isLimitedReply\":false,\"communityInfo\":null}],\"status\":\"success\",\"msg\":\"success\",\"code\":0}",
+        "signature": "0xf49b5bf217534777c350df194197fc443d321a9ae007802947b0d798006b9ebd104202d7e90b76bf709d0395a73a0f3980242ba2b8a50cf8ad7bd7d92e2cd3321c"
+      },
+      "gasCostWei": "693060011169",
+      "executionFeeWei": "693060000000",
+      "l1FeeWei": "11169",
+      "operatorFeeWei": "0"
+    },
+    {
+      "name": "Wrong signer",
+      "status": "pass",
+      "detail": "NotSignedByAirnode. Funded escrow and payout state unchanged.",
+      "transactionHash": "0x4b82b47dc1077d0baa6c5872355104dafe5c4f0fa6eaff4df99d116917a2014c",
+      "before": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "after": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "response": {
+        "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+        "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+        "timestamp": "1793414831",
+        "data": "{\"authorId\":\"12\",\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"postId\":\"20\",\"text\":\"just setting up my twttr\"}",
+        "signature": "0x6114d03de72540f011c5073b7ab1e3aec73aafe0e3faf7f778ad891ab902525b035ab8aaf5f41ba1bf9b486fc1bd7b0349fc7438437f955a51cca2b7c435cb061c"
+      },
+      "gasCostWei": "195078002097",
+      "executionFeeWei": "195078000000",
+      "l1FeeWei": "2097",
+      "operatorFeeWei": "0"
+    },
+    {
+      "name": "Stale response",
+      "status": "pass",
+      "detail": "ResponseTooOld. Funded escrow and payout state unchanged.",
+      "transactionHash": "0x83a4ba52d75194fa2fa6933eaacac89f78af25429e878eefba3925ed88bf9c37",
+      "before": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "after": {
+        "state": 0,
+        "balanceWei": "1000000000"
+      },
+      "response": {
+        "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+        "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+        "timestamp": "1793414831",
+        "data": "{\"authorId\":\"12\",\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"postId\":\"20\",\"text\":\"just setting up my twttr\"}",
+        "signature": "0xedb31ebd1e0a025b69f672e695f563504fffea0b6fb6140374fe82628741e52f3d91d85e2b81069db752688e102c0afa4ede065f3dad1e54395bbf0a5398596c1b"
+      },
+      "gasCostWei": "195924002104",
+      "executionFeeWei": "195924000000",
+      "l1FeeWei": "2104",
+      "operatorFeeWei": "0"
+    },
+    {
+      "name": "Over-budget agent action",
+      "status": "pass",
+      "detail": "10001 units exceeds the pinned 10000-unit call cap. No authorization created."
+    },
+    {
+      "name": "Duplicate payout",
+      "status": "pass",
+      "detail": "The already-paid agreement rejects another submission. No second payout or API charge."
+    }
+  ],
+  "refund": {
+    "transactionHash": "0xf6c1c7459c5965bba533b5d5fc4f16e6baff90214a80d99807a8ba788e3bcd16",
+    "state": 2,
+    "balanceWei": "0",
+    "gasCostWei": "311922000884",
+    "executionFeeWei": "311922000000",
+    "l1FeeWei": "884",
+    "operatorFeeWei": "0"
+  }
+}

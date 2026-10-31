@@ -1,0 +1,41 @@
+{
+  "name": "post-and-paid",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "NODE_ENV=production tsx server/index.ts",
+    "test": "tsx --test server/*.test.ts",
+    "test:contracts": "forge test -vv",
+    "preflight": "tsx scripts/preflight.ts",
+    "deploy": "tsx scripts/deploy.ts",
+    "scenario": "tsx scripts/scenario.ts",
+    "tamper": "tsx scripts/tamper.ts",
+    "submit-proof": "tsx scripts/submit-proof.ts",
+    "wallets:init": "tsx scripts/init-wallets.ts",
+    "reconcile": "tsx scripts/reconcile.ts",
+    "refund": "tsx scripts/refund.ts",
+    "test:restart": "tsx scripts/check-restart.ts"
+  },
+  "dependencies": {
+    "@x402/evm": "2.29.0",
+    "@x402/fetch": "2.29.0",
+    "express": "5.1.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "viem": "2.57.13"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.5",
+    "@types/node": "24.10.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "5.1.0",
+    "prettier": "3.6.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  }
+}

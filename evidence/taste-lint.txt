@@ -1,0 +1,12 @@
+TASTESKILL · LINT   2 file(s)
+
+WARN
+  [mono] Monospace type. Only literal code may be monospace.  (3×)
+      src/styles.css:120  font-family: ui-monospace, SFMono-Regular, Menlo, monospace
+      src/styles.css:750  font-family: ui-monospace, SFMono-Regular, Menlo, monospace
+      src/styles.css:909  font-family: ui-monospace, SFMono-Regular, Menlo, monospace
+  [em-dash] Em-dash habit. Use a full stop or a comma; keep at most one or two on a page.  (1×)
+      (all files):0  13 em dashes
+
+RESULT: 0 FAIL, 4 WARN
+Interface fragments marked data-ui keep their own borders and shadows. Any other line that must keep a flagged pattern for a real reason can carry the comment taste-skill-ignore.

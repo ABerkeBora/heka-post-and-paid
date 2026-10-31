@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-31T03:02:07.970Z",
+  "chainId": 84532,
+  "runs": [
+    {
+      "campaignId": "agreement-1b0bda02",
+      "contract": "0xffb396146f2443210b93ecb98c122e6a52484117",
+      "deploymentTransaction": "0xf8ac5ed8e7461927543433d6b316a1442b044ff2a251b53601cf9d558057fda9",
+      "payoutTransaction": "0x602a028d9159e4a4ac6943046c20e31484a04329ddf4c2e6e4876e379e993dbd",
+      "initBytecodeMatches": true,
+      "expectedRequestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+      "airnodeSignatureVerified": true,
+      "creatorPaidEventVerified": true,
+      "payoutWei": "10000000000000",
+      "passed": true
+    },
+    {
+      "campaignId": "agreement-b15918f6",
+      "contract": "0x7d4f7f937cc3e2f3e39c87418d2c51355100a240",
+      "deploymentTransaction": "0x77ddce6e5bca029b54494771ee5b3d7ae020a02a8cabe1ab52603fa297fab19a",
+      "payoutTransaction": "0x48c5ac28cd66f42f18e139586cba38783c3e6cbea59337469df1132ace66edff",
+      "initBytecodeMatches": true,
+      "expectedRequestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+      "airnodeSignatureVerified": true,
+      "creatorPaidEventVerified": true,
+      "payoutWei": "10000000000000",
+      "passed": true
+    }
+  ]
+}
