@@ -1,6 +1,6 @@
 {
   "project": "Post and Paid",
-  "checkedAtUtc": "2026-10-31T03:59:21.332325+00:00",
+  "checkedAtUtc": "2026-10-31T03:59:48.282792+00:00",
   "v1": {
     "url": "http://localhost:3106/",
     "status": "PASS — gerçek payout ve dört gerçek ret korunuyor",
