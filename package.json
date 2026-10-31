@@ -7,7 +7,7 @@
     "dev": "tsx server/index.ts",
     "build": "tsc --noEmit && vite build",
     "start": "NODE_ENV=production tsx server/index.ts",
-    "test": "tsx --test server/*.test.ts",
+    "test": "tsx --test server/*.test.ts server/next/*.test.ts",
     "test:contracts": "forge test -vv",
     "preflight": "tsx scripts/preflight.ts",
     "deploy": "tsx scripts/deploy.ts",
@@ -17,7 +17,12 @@
     "wallets:init": "tsx scripts/init-wallets.ts",
     "reconcile": "tsx scripts/reconcile.ts",
     "refund": "tsx scripts/refund.ts",
-    "test:restart": "tsx scripts/check-restart.ts"
+    "test:restart": "tsx scripts/check-restart.ts",
+    "next:prepare": "tsx scripts/prepare-next-wallets.ts",
+    "next:deploy": "tsx scripts/deploy-next.ts",
+    "next:consent-test": "tsx scripts/check-next-consent.ts",
+    "next:negative": "tsx scripts/check-next-negative.ts",
+    "next:preservation": "tsx scripts/check-v1-preservation.ts"
   },
   "dependencies": {
     "@x402/evm": "2.29.0",

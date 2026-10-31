@@ -1,0 +1,197 @@
+{
+  "at": "2026-10-31T03:44:09.001Z",
+  "kind": "real isolated test-wallet signature, not human X-owner pilot",
+  "factory": "0x55f8b95e4ab02550b9758e23187fc366b91f910e",
+  "creator": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+  "brand": "0xccdDf014DBFCc0B3a62cdCC89E2E9D31a5b9F0D2",
+  "terms": {
+    "agreementId": "0x580e35c77294f62cd575c5113762468b639be0f41dee89ae186b9e391759952c",
+    "brand": "0xccdDf014DBFCc0B3a62cdCC89E2E9D31a5b9F0D2",
+    "creator": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+    "authorId": "12",
+    "postId": "20",
+    "nonce": "0xc76d7219e56e44ee60d222a4d91c86d60433120ec76298fe06994d45fa579624",
+    "asset": "0x0000000000000000000000000000000000000000",
+    "feeWei": "10000000000000",
+    "requiredText": "[pap2:c76d7219e56e44ee60d222a4d91c86d60433120ec76298fe06994d45fa579624:0x46cba7a1f74a7fb3d6d83795581edabc03f705bf]",
+    "postedAfter": 1793418186,
+    "postedBefore": 1793443446,
+    "claimDeadline": 1793447046,
+    "consentDeadline": 1793445246,
+    "maxResponseAge": 300
+  },
+  "typedData": {
+    "domain": {
+      "name": "Post and Paid",
+      "version": "2",
+      "chainId": 84532,
+      "verifyingContract": "0x55f8b95e4ab02550b9758e23187fc366b91f910e"
+    },
+    "types": {
+      "EIP712Domain": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "version",
+          "type": "string"
+        },
+        {
+          "name": "chainId",
+          "type": "uint256"
+        },
+        {
+          "name": "verifyingContract",
+          "type": "address"
+        }
+      ],
+      "CreatorConsent": [
+        {
+          "name": "agreementId",
+          "type": "bytes32"
+        },
+        {
+          "name": "brand",
+          "type": "address"
+        },
+        {
+          "name": "creator",
+          "type": "address"
+        },
+        {
+          "name": "authorId",
+          "type": "string"
+        },
+        {
+          "name": "postId",
+          "type": "string"
+        },
+        {
+          "name": "nonce",
+          "type": "bytes32"
+        },
+        {
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "name": "feeWei",
+          "type": "uint256"
+        },
+        {
+          "name": "requiredText",
+          "type": "string"
+        },
+        {
+          "name": "postedAfter",
+          "type": "uint64"
+        },
+        {
+          "name": "postedBefore",
+          "type": "uint64"
+        },
+        {
+          "name": "claimDeadline",
+          "type": "uint64"
+        },
+        {
+          "name": "consentDeadline",
+          "type": "uint64"
+        },
+        {
+          "name": "maxResponseAge",
+          "type": "uint64"
+        }
+      ]
+    },
+    "primaryType": "CreatorConsent",
+    "message": {
+      "agreementId": "0x580e35c77294f62cd575c5113762468b639be0f41dee89ae186b9e391759952c",
+      "brand": "0xccdDf014DBFCc0B3a62cdCC89E2E9D31a5b9F0D2",
+      "creator": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+      "authorId": "12",
+      "postId": "20",
+      "nonce": "0xc76d7219e56e44ee60d222a4d91c86d60433120ec76298fe06994d45fa579624",
+      "asset": "0x0000000000000000000000000000000000000000",
+      "feeWei": "10000000000000",
+      "requiredText": "[pap2:c76d7219e56e44ee60d222a4d91c86d60433120ec76298fe06994d45fa579624:0x46cba7a1f74a7fb3d6d83795581edabc03f705bf]",
+      "postedAfter": 1793418186,
+      "postedBefore": 1793443446,
+      "claimDeadline": 1793447046,
+      "consentDeadline": 1793445246,
+      "maxResponseAge": 300
+    }
+  },
+  "signature": "0x47c873571a2dc8a922cb46e1bd09cd34eee41bfb02307f54415a07954465686e43cacd4162549007cf6de2bc1a6c22626a2824807e52acf6df2323254e9869ba1b",
+  "termsHash": "0xe20e19fd72570ca0da43a87c9848fe66f7ee78c308c2bcbbccdbd9ce2db2efc2",
+  "recovered": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+  "onchainDigest": "0xe20e19fd72570ca0da43a87c9848fe66f7ee78c308c2bcbbccdbd9ce2db2efc2",
+  "nonceConsumed": false,
+  "changedPostBlocked": true,
+  "cases": [
+    {
+      "name": "Changed post",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Changed author",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Changed beneficiary",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Changed fee",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Changed nonce",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Changed text",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Wrong domain",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Wrong version",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Wrong chain",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Wrong factory",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Expired consent",
+      "rejected": true,
+      "transactionSubmitted": false
+    },
+    {
+      "name": "Consent re-submission",
+      "rejected": true,
+      "transactionSubmitted": false
+    }
+  ],
+  "pilot": "PENDING",
+  "fundingTransactions": 0,
+  "payoutTransactions": 0
+}

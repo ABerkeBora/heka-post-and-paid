@@ -1,4 +1,5 @@
 import express from "express";
+import { nextRouter } from "./next/routes";
 import { resolve } from "node:path";
 import { existsSync } from "node:fs";
 import {
@@ -35,6 +36,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use(express.json({ limit: "24kb" }));
+app.use("/api/next", nextRouter);
 app.get("/api/state", (_req, res) => res.json(publicState()));
 app.get("/api/refresh", async (_req, res) => {
   try {

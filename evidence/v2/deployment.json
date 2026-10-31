@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-31T03:41:19.803Z",
+  "network": "Base Sepolia84532",
+  "factory": {
+    "address": "0x55f8b95e4ab02550b9758e23187fc366b91f910e",
+    "verifier": "0xa4d6e5D0596f064290d810C1623D3C2114a55624",
+    "transactionHash": "0x38c3148701bce6fe8d504d4f2a3c25b024538fd9d1dd80f644caa2eeed4bca2b",
+    "blockNumber": "52481052",
+    "gasCostWei": "41590080074450"
+  },
+  "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+  "creatorPilot": "PENDING",
+  "collateralFunded": false
+}

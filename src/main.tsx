@@ -1,3 +1,4 @@
+import NextApp from "./next";
 import React, { useCallback, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
@@ -1258,6 +1259,11 @@ function App() {
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    {window.location.pathname === "/next" ||
+    window.location.pathname.startsWith("/next/") ? (
+      <NextApp />
+    ) : (
+      <App />
+    )}
   </React.StrictMode>,
 );

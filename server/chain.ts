@@ -177,10 +177,30 @@ export async function sendDurable(
   tx: { to?: Hex; data: Hex; value?: bigint; gas?: bigint },
   gasLimitWei: bigint,
   allowRevert = false,
+  runtime?: {
+    actor: ReturnType<typeof wallets>["deployer"];
+    save: (state: any) => void;
+  },
 ) {
   state.transactions ||= {};
   let record = state.transactions[key];
-  const actor = wallets()[role];
+  const actor = runtime?.actor || wallets()[role];
+  const persist = runtime?.save || save;
+  if (record && runtime) {
+    const parsed = parseTransaction(record.raw);
+    if (
+      parsed.chainId !== 84532 ||
+      (parsed.to || "").toLowerCase() !== (tx.to || "").toLowerCase() ||
+      (parsed.data || "0x") !== tx.data ||
+      BigInt(parsed.value || 0) !== BigInt(tx.value || 0)
+    )
+      throw new Error("Durable intent transaction binding changed.");
+    if (
+      record.from &&
+      record.from.toLowerCase() !== actor.account.address.toLowerCase()
+    )
+      throw new Error("Durable intent executor changed.");
+  }
   if (!record) {
     if ((await publicClient.getChainId()) !== 84532)
       throw new Error("Wrong RPC network");
@@ -192,6 +212,7 @@ export async function sendDurable(
     const fees = await estimatedFees(prepared, gasLimitWei);
     const raw = await actor.account.signTransaction(prepared as any);
     record = {
+      from: actor.account.address,
       hash: keccak256(raw),
       raw,
       status: "signed",
@@ -205,7 +226,7 @@ export async function sendDurable(
         nonce: BigInt(prepared.nonce!),
       });
     state.transactions[key] = record;
-    save(state);
+    persist(state);
   }
   let receipt;
   try {
@@ -219,7 +240,7 @@ export async function sendDurable(
       record,
       await estimatedFees(parseTransaction(record.raw), gasLimitWei),
     );
-    save(state);
+    persist(state);
     try {
       await publicClient.sendRawTransaction({
         serializedTransaction: record.raw,
@@ -233,7 +254,7 @@ export async function sendDurable(
         throw error;
     }
     record.status = "pending";
-    save(state);
+    persist(state);
     receipt = await publicClient.waitForTransactionReceipt({
       hash: record.hash,
       confirmations: 1,
@@ -244,7 +265,7 @@ export async function sendDurable(
   record.blockNumber = String(receipt.blockNumber);
   record.gasUsed = String(receipt.gasUsed);
   record.effectiveGasPrice = String(receipt.effectiveGasPrice);
-  save(state);
+  persist(state);
   try {
     Object.assign(record, await receiptFeeBreakdown(receipt));
     delete record.gasAccountingError;
@@ -254,13 +275,13 @@ export async function sendDurable(
       receipt.gasUsed * receipt.effectiveGasPrice,
     );
     record.gasAccountingError = error.message;
-    save(state);
+    persist(state);
     throw error;
   }
   // Actual fees are reconciled even for intentionally rejected test transactions.
   record.gasBudgetExceeded =
     BigInt(record.gasCostWei) > BigInt(record.gasCapWei || gasLimitWei);
-  save(state);
+  persist(state);
   if (receipt.status !== "success" && !allowRevert)
     throw new Error(`Transaction reverted: ${record.hash}`);
   return { record, receipt };

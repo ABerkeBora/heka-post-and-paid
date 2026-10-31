@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-31T03:56:03.382Z",
+  "kind": "Isolated test-wallet external-signature browser QA. No X-owner pilot, funding or payout.",
+  "agreementId": "0xe4f04724d0ec7244b505674cbe2c1ea20ec530271a7f2cc0911ba13d176a6ae1",
+  "consent": {
+    "verified": true,
+    "termsHash": "0xae65b75d3fddb95007fe18de561c69361fd28d3069b0c96dd730bc1912cd61bf",
+    "recovered": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+    "signature": "0xb008222987bbe2e42f517618c2d640ea253f1f27cc176746a519125e64826bb95d5128f4bd7cf7c38eceb8c65ae31425d391e393bec3d76792d8ed533b709f891c",
+    "at": "2026-10-31T03:55:13.113Z",
+    "verification": "EOA signature recovery plus deployed factory verifyConsent; nonce is consumed only when funding succeeds."
+  },
+  "sourcePurchased": false,
+  "escrowCreated": false,
+  "v1Changed": false,
+  "archivedForMorning": true
+}

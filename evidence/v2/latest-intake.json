@@ -1,0 +1,134 @@
+{
+  "status": "intake-rejected",
+  "network": {
+    "name": "Base Sepolia",
+    "chainId": 84532
+  },
+  "campaign": {
+    "agreementId": "0x580e35c77294f62cd575c5113762468b639be0f41dee89ae186b9e391759952c",
+    "brand": "0xccdDf014DBFCc0B3a62cdCC89E2E9D31a5b9F0D2",
+    "creator": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+    "authorId": "12",
+    "postId": "20",
+    "nonce": "0xc76d7219e56e44ee60d222a4d91c86d60433120ec76298fe06994d45fa579624",
+    "asset": "0x0000000000000000000000000000000000000000",
+    "feeWei": "10000000000000",
+    "requiredText": "[pap2:c76d7219e56e44ee60d222a4d91c86d60433120ec76298fe06994d45fa579624:0x46cba7a1f74a7fb3d6d83795581edabc03f705bf]",
+    "postedAfter": 1793418186,
+    "postedBefore": 1793443446,
+    "claimDeadline": 1793447046,
+    "consentDeadline": 1793445246,
+    "maxResponseAge": 300
+  },
+  "challenge": "[pap2:c76d7219e56e44ee60d222a4d91c86d60433120ec76298fe06994d45fa579624:0x46cba7a1f74a7fb3d6d83795581edabc03f705bf]",
+  "receipts": [
+    {
+      "kind": "data",
+      "title": "Agent bought the intake snapshot",
+      "amount": "10000",
+      "asset": "aUSD",
+      "transactionHash": "0xbacff4be2fc37239668fb5b9fff76f8f03c2617faad859773d53714ccf6a4094",
+      "status": "confirmed",
+      "detail": "External data fee is spent independently of escrow eligibility.",
+      "at": "2026-10-31T03:45:12.706Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "1793418246819-0",
+      "title": "Campaign challenge created",
+      "detail": "Creator must publish the exact nonce and beneficiary fragment before pinning the post.",
+      "status": "confirmed",
+      "at": "2026-10-31T03:44:06.819Z"
+    },
+    {
+      "id": "1793418246827-1",
+      "title": "Post pinned",
+      "detail": "Post20; creator must sign the complete unchanged terms.",
+      "status": "confirmed",
+      "at": "2026-10-31T03:44:06.827Z"
+    },
+    {
+      "id": "1793418248999-2",
+      "title": "Creator consent verified",
+      "detail": "The beneficiary signed the complete pinned terms. Wallet consent alone does not prove the X account connection.",
+      "status": "confirmed",
+      "at": "2026-10-31T03:44:08.999Z"
+    },
+    {
+      "id": "1793418312839-3",
+      "title": "Post intake rejected",
+      "detail": "No agreement was funded. A successfully purchased external snapshot remains charged.",
+      "status": "rejected",
+      "at": "2026-10-31T03:45:12.839Z"
+    },
+    {
+      "id": "1793418316487-4",
+      "title": "On-chain missing-challenge rejection verified",
+      "detail": "Intentional historical-post test: no child escrow, consumed consent or payout; external data fee and revert gas remain spent.",
+      "status": "rejected",
+      "at": "2026-10-31T03:45:16.487Z"
+    }
+  ],
+  "transactions": {},
+  "pilot": {
+    "status": "pending",
+    "detail": "A creator must publish this campaign challenge from their own X account. No new creator pilot or payout has been completed."
+  },
+  "updatedAt": "2026-10-31T03:47:30.485Z",
+  "consent": {
+    "verified": true,
+    "termsHash": "0xe20e19fd72570ca0da43a87c9848fe66f7ee78c308c2bcbbccdbd9ce2db2efc2",
+    "recovered": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+    "signature": "0x47c873571a2dc8a922cb46e1bd09cd34eee41bfb02307f54415a07954465686e43cacd4162549007cf6de2bc1a6c22626a2824807e52acf6df2323254e9869ba1b",
+    "at": "2026-10-31T03:44:08.999Z",
+    "verification": "EOA signature recovery plus deployed factory verifyConsent; nonce is consumed only when funding succeeds."
+  },
+  "intakeMandate": {
+    "id": "v2-580e35c77294f62cd575c5113762468b639be0f41dee89ae186b9e391759952c-intake",
+    "status": "completed",
+    "apiPerCallUnits": "10000",
+    "apiTotalUnits": "10000",
+    "apiSpentUnits": "10000",
+    "maxActions": 1,
+    "actionsUsed": 1,
+    "gasCapWei": "50000000000000",
+    "gasTotalCapWei": "100000000000000",
+    "gasSpentWei": "0",
+    "expiresAt": 1793419210,
+    "recipient": "0x1505FD562AC2Fb4307B85BC6c672FfeafB4d57A7",
+    "asset": "0xbeA34973e5f67F18F656A2C6070C64326C791808",
+    "network": "eip155:84532",
+    "beneficiary": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+    "contract": "0x55f8b95e4ab02550b9758e23187fc366b91f910e",
+    "apiReservedUnits": "0"
+  },
+  "error": "The post does not include the exact campaign nonce and beneficiary challenge. No agreement was funded. The confirmed data fee remains spent.",
+  "intake": {
+    "verified": false,
+    "purchased": true,
+    "envelope": {
+      "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+      "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+      "timestamp": "1793418311",
+      "data": "{\"authorId\":\"12\",\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"postId\":\"20\",\"text\":\"just setting up my twttr\"}",
+      "signature": "0x87c14be01f50a945adbc289bd0d668c687f1dddb12d97c9e47da0171abf9850106a9ef81f80a6b6897c13c9c9f86f360b4bd10128897e5b3dbe98c977ec41d781b"
+    },
+    "error": "The post does not include the exact campaign nonce and beneficiary challenge. No agreement was funded. The confirmed data fee remains spent.",
+    "rejectionName": "MissingChallenge"
+  },
+  "factory": {
+    "address": "0x55f8b95e4ab02550b9758e23187fc366b91f910e",
+    "verifier": "0xa4d6e5D0596f064290d810C1623D3C2114a55624",
+    "transactionHash": "0x38c3148701bce6fe8d504d4f2a3c25b024538fd9d1dd80f644caa2eeed4bca2b",
+    "blockNumber": "52481052",
+    "gasCostWei": "41590080074450"
+  },
+  "limits": {
+    "intakeFeeUnits": "10000",
+    "agentFeeUnits": "10000",
+    "apiTotalCapUnits": "20000",
+    "gasCapWei": "50000000000000",
+    "gasTotalCapWei": "100000000000000"
+  }
+}

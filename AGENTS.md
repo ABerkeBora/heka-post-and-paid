@@ -25,3 +25,7 @@ A signed snapshot authenticates the provider response. It does not establish con
 Use TasteSkill's app-screen workflow for interface work. Keep the compact warm studio identity and real loading, pending, error, rejection, paid and refund states. Inspect desktop/tablet/phone in the supported browser. Run production build, payment and contract tests, a real delegated action, four real-response tamper cases, and a duplicate/budget rejection. Preserve actual chain history when creating a new scenario.
 
 Keep README, .env.example, lockfile, deployment/transaction evidence, judge response submission path, presentation outline and honest MORNING_HANDOFF.md self-contained. Publish only after scanning the source tree for secrets. Verify repo-local ABerkeBora author/committer identity before commit; do not change global Git configuration.
+
+## V2 scope
+
+V1 `/` and v1-baseline source/runtime/evidence must remain preserved. V2 `/next`, `/api/next/`, `.local/v2/` and its separate executor/factory own creator EOA consent and exact author/post/nonce/beneficiary challenge intake. Do not reuse the V1 key nonce concurrently. Keep TRACK_REQUIREMENTS_V2.md and MORNING_HANDOFF_V2.md current, including actual rule start/final checks. No controlled creator post is available: isolated real wallet signatures and source-negative tests plus contract fixtures meet the authorized engineering boundary; actual new creator intake/funding/payout remain PENDING. Never present historical post20 as a human creator pilot.

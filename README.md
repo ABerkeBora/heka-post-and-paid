@@ -119,7 +119,7 @@ npm run test:contracts
 npm run build
 ```
 
-The contract suite has 25 passing tests covering oracle tampering, request construction, payout predicates, replay, expiry/refund, reentrancy and failed-transfer rollback. Its synthetic signer fixtures are explicitly separate from the live source and transaction evidence. Browser captures are stored in [evidence/screenshots](evidence/screenshots); final check results and outstanding work are in [MORNING_HANDOFF.md](MORNING_HANDOFF.md).
+The preserved V1 contract suite has 25 passing tests covering oracle tampering, request construction, payout predicates, replay, expiry/refund, reentrancy and failed-transfer rollback. Its synthetic signer fixtures are explicitly separate from the live source and transaction evidence. Browser captures are stored in [evidence/screenshots](evidence/screenshots); final check results and outstanding work are in [MORNING_HANDOFF.md](MORNING_HANDOFF.md).
 
 `server/payment.ts` persists one EIP-3009 authorization per intent and reconciles its settlement before retrying. `server/chain.ts` stores exact signed transactions before broadcast and retries the same hash/nonce. Process locking serializes economic actions. No automatic top-up occurs.
 
@@ -132,3 +132,39 @@ The contract suite has 25 passing tests covering oracle tampering, request const
 - The local executor controls isolated test keys. Its mandate is not a general smart-wallet/session-key system, and its API/gas budgets are not on-chain allowances. Keys never enter model context or public evidence.
 
 Official sources: [API3 track and general submission rules](https://hackathon.tum-blockchain.com/prizes#api3), [API3 starter](https://github.com/api3dao/airnodehub-hackathon-starter), [TwitterAPI listing](https://airnodehub.api3.org/explore/twitterapi). See [TRACK_REQUIREMENTS.md](TRACK_REQUIREMENTS.md) for requirement-by-evidence status and [SUBMISSION.md](SUBMISSION.md) for the presentation and submission draft. A video recording and Devfolio submission are still outstanding; this repository does not claim that all competition submission requirements are complete.
+
+## V2: creator consent and new-post intake
+
+The working V1 remains at [http://127.0.0.1:3106/](http://127.0.0.1:3106/). Its source baseline is commit `3dac6e4a397c9719c8e05c6639550a0260ce040d`, preserved by the immutable [`v1-baseline`](https://github.com/ABerkeBora/heka-post-and-paid/tree/v1-baseline) tag. V2 is published on [`codex/next`](https://github.com/ABerkeBora/heka-post-and-paid/tree/codex/next) and reviewed separately at [http://127.0.0.1:3106/next](http://127.0.0.1:3106/next). It keeps the same creator-studio identity.
+
+V1 pins a brand-supplied author-to-beneficiary association. V2 adds creator EOA consent over the full campaign terms, followed by a signed social-post check that must contain the exact unique nonce and beneficiary challenge. A wallet signature by itself is not presented as X account ownership.
+
+V2 uses `/api/next/`, ignored `.local/v2/` state/intents/mandates, a separate test executor and a separate creator-consent factory. It does not consume V1 escrows, pending jobs or saved receipts. The small setup allocation to the isolated executor is infrastructure funding, not a customer payment or a completed creator pilot. Unchanged x402 authorization/receipt reconciliation and durable transaction logic are shared with explicit V2 storage/signer callbacks.
+
+```sh
+npm run next:prepare
+npm run next:deploy
+npm run next:consent-test
+npm run next:negative
+```
+
+These V2 setup/check commands prepare isolated test roles, deploy the ready factory, test actual test-wallet signatures and exercise a historical-post negative case. Their evidence belongs under `evidence/v2/`. They do not publish a post or impersonate a creator. The deployed factory is [0x55f8b95e4ab02550b9758e23187fc366b91f910e](https://sepolia.basescan.org/address/0x55f8b95e4ab02550b9758e23187fc366b91f910e) on Base Sepolia. Its [deployment](evidence/v2/deployment.json), [real test-wallet consent checks](evidence/v2/wallet-consent.json), [real paid missing-challenge rejection](evidence/v2/missing-challenge.json) and [browser verification](evidence/v2/browser-qa.json) are separate from a human creator pilot. Do not rerun setup/negative scripts as an ordinary morning startup: they are reproducible test scenarios and can consume test gas/API fees.
+
+The normal creator flow is:
+
+1. Create a campaign challenge for the creator beneficiary and X author ID.
+2. The creator publishes the exact challenge from their own account and supplies that post ID. No social posting or OAuth session is performed by this application.
+3. The creator reads and signs the complete EIP-712 terms in their own EVM wallet, or pastes an externally produced EOA signature over the same typed data. The message binds domain/version/chain/factory, agreement ID, brand, beneficiary, author/post IDs, nonce, native fee, exact text condition and all timing rules.
+4. Verify the published post intake. Its Airnode signature, fixed request/projection, post/author IDs, time and exact challenge are checked. A mismatch cannot create a funded agreement; a successfully purchased but rejected snapshot can still cost its disclosed API fee.
+5. The brand funds those exact consented terms. The factory checks consent and intake on-chain, consumes consent/nonce/agreement ID once, and creates a separate immutable V1 payout escrow.
+6. Start the bounded procurement agent once. It obtains a fresh post-funding snapshot and submits the eligible payout without another payout click. The executor deliberately makes this separate purchase. The unchanged child checks `timestamp >= fundedAt`: it rejects an older-second intake, but a same-second intake could also pass on-chain. A strictly new envelope is an application policy, not an on-chain guarantee.
+
+The canonical social fragment is `[pap2:<64 lowercase nonce hex characters>:<lowercase 0x beneficiary>]`. The factory derives it; callers cannot replace it with an arbitrary substring. Creator consent recovery, expiry, domain/chain binding and replay are enforced by the factory. Source intake verification is on-chain in its immutable verifier. API/gas mandates remain local-executor limits, with the same Base fee-preflight caveat described for V1. A complete positive V2 cycle buys two snapshots: one intake and one post-funding payout proof, each capped at `10000` aUSD units, with a combined API cap of `20000` units (0.02 aUSD). Creator collateral remains the separate `10000000000000` wei fee.
+
+Because the factory creates the unchanged V1 child, the child's `brand()` is the factory. Its original signed brand is recorded in the factory registry. After the deadline the UI refunds through the factory, which can forward only that child's pinned collateral to that original brand. There is no administrator redirection or general withdrawal path. Contract details and trust boundaries are in [contracts/v2/README.md](contracts/v2/README.md).
+
+The V2 contract suite adds **56 passing tests** to the preserved **25 V1 tests**. It includes an independently generated viem EIP-712 hash vector, actual test-key signatures, all consent-field/domain/chain mutations, consent replay, exact social binding, the four oracle tamper classes, older-second payout rejection and refund safety. Synthetic oracle fixtures are explicitly separated from live source evidence.
+
+**A real new-creator pilot and V2 payout remain PENDING until a human supplies a newly published matching post.** Historical post 20 is a negative source case; it is never presented as new creator consent. Without that external input, the authorized engineering completion boundary is the working challenge/intake, real test-wallet signature checks, isolated source/contract tests and the single morning creator action described in [MORNING_HANDOFF_V2.md](MORNING_HANDOFF_V2.md). This does not make V2 fully live-qualified for the API3 track.
+
+V2 verification completed with **59 TypeScript tests,81 contract tests and a production build**. Browser evidence covers desktop/tablet/phone, including a real test EOA signature accepted through the external-signature form. An EIP-1193 extension popup was not exercised. The current `/next` screen is ready for actual creator input; isolated historical-post test scenarios are archived. Today’s presentation recommendation is **V1**, because its real payout and four real rejection receipts are complete; V2 adds the stronger consent flow while its new creator pilot remains pending. See [REVIEW_SUMMARY.json](REVIEW_SUMMARY.json) for the concise comparison.

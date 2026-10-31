@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-31T03:45:16.486Z",
+  "kind": "Real fresh Airnode response for historical post20 is an intentional negative input, not a new creator pilot.",
+  "factory": "0x55f8b95e4ab02550b9758e23187fc366b91f910e",
+  "agreementId": "0x580e35c77294f62cd575c5113762468b639be0f41dee89ae186b9e391759952c",
+  "creator": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+  "termsHash": "0xe20e19fd72570ca0da43a87c9848fe66f7ee78c308c2bcbbccdbd9ce2db2efc2",
+  "sourceRejected": true,
+  "sourceError": "The contract function \"verifyIntake\" reverted.",
+  "envelope": {
+    "airnode": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+    "requestHash": "0xcb9a3601655369245eddab0343b42302a62112532b607de8e2083f964e7edc80",
+    "timestamp": "1793418311",
+    "data": "{\"authorId\":\"12\",\"createdAt\":\"Tue Mar 21 20:50:14 +0000 2006\",\"postId\":\"20\",\"text\":\"just setting up my twttr\"}",
+    "signature": "0x87c14be01f50a945adbc289bd0d668c687f1dddb12d97c9e47da0171abf9850106a9ef81f80a6b6897c13c9c9f86f360b4bd10128897e5b3dbe98c977ec41d781b"
+  },
+  "confirmedDataReceipt": {
+    "kind": "data",
+    "title": "Agent bought the intake snapshot",
+    "amount": "10000",
+    "asset": "aUSD",
+    "transactionHash": "0xbacff4be2fc37239668fb5b9fff76f8f03c2617faad859773d53714ccf6a4094",
+    "status": "confirmed",
+    "detail": "External data fee is spent independently of escrow eligibility.",
+    "at": "2026-10-31T03:45:12.706Z"
+  },
+  "rejectedFundingTransaction": "0x858cddd1ac99b22dfe9f6ab9aa9a01ccba66fb63f2fdc1b71de03e735ecba5ef",
+  "revertGasWei": "848958002466",
+  "executionFeeWei": "848958000000",
+  "l1FeeWei": "2466",
+  "operatorFeeWei": "0",
+  "before": {
+    "agreement": [
+      "0x0000000000000000000000000000000000000000",
+      "0x0000000000000000000000000000000000000000",
+      "0x0000000000000000000000000000000000000000",
+      "0",
+      "0x0000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "nonceUsed": false,
+    "factoryBalanceWei": "0",
+    "creatorBalanceWei": "0"
+  },
+  "after": {
+    "agreement": [
+      "0x0000000000000000000000000000000000000000",
+      "0x0000000000000000000000000000000000000000",
+      "0x0000000000000000000000000000000000000000",
+      "0",
+      "0x0000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "nonceUsed": false,
+    "factoryBalanceWei": "0",
+    "creatorBalanceWei": "0"
+  },
+  "remainingTestAusdUnits": "90000",
+  "newEscrowFunded": false,
+  "creatorPayout": false,
+  "pilot": "PENDING",
+  "rejectionName": "MissingChallenge",
+  "historicalRecheck": {
+    "at": "2026-10-31T03:47:30.484Z",
+    "blockNumber": "52482232",
+    "errorName": "MissingChallenge"
+  }
+}

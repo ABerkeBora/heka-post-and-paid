@@ -1,0 +1,316 @@
+{
+  "checkedAt": "2026-10-31T03:56:39.044Z",
+  "network": {
+    "name": "Base Sepolia",
+    "chainId": 84532,
+    "blockNumber": "52485649",
+    "blockTimestamp": "1793418998",
+    "blockHash": "0x970a6f34899846bf879804add0c95c395281cc4f2b25a600c5234eec992b403f"
+  },
+  "readOnly": true,
+  "transactionsSubmitted": 0,
+  "paidApiCalls": 0,
+  "deployment": {
+    "transactionHash": "0x38c3148701bce6fe8d504d4f2a3c25b024538fd9d1dd80f644caa2eeed4bca2b",
+    "blockNumber": "52481052",
+    "blockHash": "0x4622bc2200b07c34b2f0273b23b52aa08cfbc0237264e00e3856356c1e29c105",
+    "status": "success",
+    "from": "0xccddf014dbfcc0b3a62cdcc89e2e9d31a5b9f0d2",
+    "nonce": 0,
+    "contractAddress": "0x55f8b95e4ab02550b9758e23187fc366b91f910e",
+    "valueWei": "0",
+    "gasUsed": "6931680"
+  },
+  "factory": {
+    "address": "0x55f8b95e4ab02550b9758e23187fc366b91f910e",
+    "runtimeBytes": 21762,
+    "actualRuntimeHash": "0x516be8f84bdccc96f3e9215bf47676e0b7cffe596eebdd1ccf4f6cbaa6822c7e",
+    "compiledPatchedRuntimeHash": "0x516be8f84bdccc96f3e9215bf47676e0b7cffe596eebdd1ccf4f6cbaa6822c7e",
+    "immutableObservations": [
+      {
+        "astId": "968",
+        "role": "airnode",
+        "value": "0x0000000000000000000000007b02fd3324d2dc362f65a9c01e59ec5fdb4e1ccb",
+        "locations": [
+          {
+            "start": 823,
+            "length": 32
+          },
+          {
+            "start": 4062,
+            "length": 32
+          }
+        ]
+      },
+      {
+        "astId": "971",
+        "role": "intakeVerifier",
+        "value": "0x000000000000000000000000a4d6e5d0596f064290d810c1623d3c2114a55624",
+        "locations": [
+          {
+            "start": 1034,
+            "length": 32
+          },
+          {
+            "start": 1631,
+            "length": 32
+          },
+          {
+            "start": 2723,
+            "length": 32
+          }
+        ]
+      }
+    ],
+    "exactRuntimeMatch": true
+  },
+  "verifier": {
+    "address": "0xa4d6e5D0596f064290d810C1623D3C2114a55624",
+    "runtimeBytes": 9919,
+    "actualRuntimeHash": "0x5e45c7d748cea24f4560d25833dd559f37adbe6e43f44b839675c2496bc940d5",
+    "compiledPatchedRuntimeHash": "0x5e45c7d748cea24f4560d25833dd559f37adbe6e43f44b839675c2496bc940d5",
+    "immutableObservations": [
+      {
+        "astId": "651",
+        "role": "airnode",
+        "value": "0x0000000000000000000000007b02fd3324d2dc362f65a9c01e59ec5fdb4e1ccb",
+        "locations": [
+          {
+            "start": 129,
+            "length": 32
+          },
+          {
+            "start": 193,
+            "length": 32
+          }
+        ]
+      }
+    ],
+    "exactRuntimeMatch": true
+  },
+  "expectedSigner": "0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB",
+  "observedFactoryBalanceWei": "0",
+  "compiler": {
+    "version": "0.8.37+commit.f401782d",
+    "evmVersion": "cancun",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    }
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "deployment file factory address matches requested target",
+      "passed": true
+    },
+    {
+      "name": "deployment file verifier address matches requested target",
+      "passed": true
+    },
+    {
+      "name": "deployment file signer matches pinned expected signer",
+      "passed": true
+    },
+    {
+      "name": "RPC is Base Sepolia chain84532",
+      "passed": true
+    },
+    {
+      "name": "factory deployment receipt succeeded",
+      "passed": true
+    },
+    {
+      "name": "deployment transaction is contract creation",
+      "passed": true
+    },
+    {
+      "name": "receipt created the requested factory",
+      "passed": true
+    },
+    {
+      "name": "deployment used isolated V2 executor",
+      "passed": true,
+      "detail": {
+        "sender": "0xccddf014dbfcc0b3a62cdcc89e2e9d31a5b9f0d2",
+        "expectedExecutor": "0xccdDf014DBFCc0B3a62cdCC89E2E9D31a5b9F0D2"
+      }
+    },
+    {
+      "name": "V2 executor differs from V1 preparation source",
+      "passed": true
+    },
+    {
+      "name": "deployment carried zero creator collateral",
+      "passed": true
+    },
+    {
+      "name": "factory initcode and constructor argument match exactly",
+      "passed": true,
+      "detail": {
+        "actualBytes": 32163,
+        "expectedBytes": 32163,
+        "actualHash": "0xb6b956df785d35bb7dd5cca61309d9d3158f311f08443704ab29ee1d8737ecee",
+        "expectedHash": "0xb6b956df785d35bb7dd5cca61309d9d3158f311f08443704ab29ee1d8737ecee"
+      }
+    },
+    {
+      "name": "factory pins the expected Airnode",
+      "passed": true
+    },
+    {
+      "name": "factory pins the expected verifier",
+      "passed": true
+    },
+    {
+      "name": "verifier pins the same expected Airnode",
+      "passed": true
+    },
+    {
+      "name": "verifier is factory first CREATE child",
+      "passed": true
+    },
+    {
+      "name": "factory chain constant is84532",
+      "passed": true
+    },
+    {
+      "name": "EIP712 domain binds name/version/chain/factory",
+      "passed": true,
+      "detail": {
+        "actual": "0x115b1f263597b04a973d80baba0310e5005adb6cedfa2b5f5eb727adbef9e5e2",
+        "expected": "0x115b1f263597b04a973d80baba0310e5005adb6cedfa2b5f5eb727adbef9e5e2",
+        "name": "Post and Paid",
+        "version": "2",
+        "chainId": 84532,
+        "verifyingContract": "0x55f8b95e4ab02550b9758e23187fc366b91f910e"
+      }
+    },
+    {
+      "name": "all fourteen signed terms match expected type hash",
+      "passed": true,
+      "detail": {
+        "actual": "0x8ab85b6d1c36e1387ae4732d315d35b9cfdf1d33c4eb79991d8d3b5623e1c22e",
+        "expected": "0x8ab85b6d1c36e1387ae4732d315d35b9cfdf1d33c4eb79991d8d3b5623e1c22e",
+        "type": "CreatorConsent(bytes32 agreementId,address brand,address creator,string authorId,string postId,bytes32 nonce,address asset,uint256 feeWei,string requiredText,uint64 postedAfter,uint64 postedBefore,uint64 claimDeadline,uint64 consentDeadline,uint64 maxResponseAge)"
+      }
+    },
+    {
+      "name": "factory runtime length matches compiled artifact",
+      "passed": true,
+      "detail": {
+        "actualBytes": 21762,
+        "compiledBytes": 21762
+      }
+    },
+    {
+      "name": "factory immutable 968 matches pinned address",
+      "passed": true,
+      "detail": {
+        "role": "airnode",
+        "value": "0x0000000000000000000000007b02fd3324d2dc362f65a9c01e59ec5fdb4e1ccb",
+        "locations": [
+          {
+            "start": 823,
+            "length": 32
+          },
+          {
+            "start": 4062,
+            "length": 32
+          }
+        ]
+      }
+    },
+    {
+      "name": "factory immutable 971 matches pinned address",
+      "passed": true,
+      "detail": {
+        "role": "intakeVerifier",
+        "value": "0x000000000000000000000000a4d6e5d0596f064290d810c1623d3c2114a55624",
+        "locations": [
+          {
+            "start": 1034,
+            "length": 32
+          },
+          {
+            "start": 1631,
+            "length": 32
+          },
+          {
+            "start": 2723,
+            "length": 32
+          }
+        ]
+      }
+    },
+    {
+      "name": "factory contains every expected immutable role",
+      "passed": true
+    },
+    {
+      "name": "factory full runtime matches compiled code with verified immutables",
+      "passed": true,
+      "detail": {
+        "actualHash": "0x516be8f84bdccc96f3e9215bf47676e0b7cffe596eebdd1ccf4f6cbaa6822c7e",
+        "expectedPatchedHash": "0x516be8f84bdccc96f3e9215bf47676e0b7cffe596eebdd1ccf4f6cbaa6822c7e"
+      }
+    },
+    {
+      "name": "verifier runtime length matches compiled artifact",
+      "passed": true,
+      "detail": {
+        "actualBytes": 9919,
+        "compiledBytes": 9919
+      }
+    },
+    {
+      "name": "verifier immutable 651 matches pinned address",
+      "passed": true,
+      "detail": {
+        "role": "airnode",
+        "value": "0x0000000000000000000000007b02fd3324d2dc362f65a9c01e59ec5fdb4e1ccb",
+        "locations": [
+          {
+            "start": 129,
+            "length": 32
+          },
+          {
+            "start": 193,
+            "length": 32
+          }
+        ]
+      }
+    },
+    {
+      "name": "verifier contains every expected immutable role",
+      "passed": true
+    },
+    {
+      "name": "verifier full runtime matches compiled code with verified immutables",
+      "passed": true,
+      "detail": {
+        "actualHash": "0x5e45c7d748cea24f4560d25833dd559f37adbe6e43f44b839675c2496bc940d5",
+        "expectedPatchedHash": "0x5e45c7d748cea24f4560d25833dd559f37adbe6e43f44b839675c2496bc940d5"
+      }
+    }
+  ],
+  "creatorPilot": "PENDING \u2014 this deployment verification does not establish a new creator post, funded agreement or payout.",
+  "reproduction": {
+    "method": "Recompile the repository with forge build, then compare the exact CREATE input and runtime code. Patch only compiler-declared immutable reference words to the pinned addresses, check every occurrence, and require exact equality of the entire resulting runtime. Read expected signer/verifier and EIP712 domain/type hashes from the deployed contracts at one fixed RPC block.",
+    "steps": [
+      "Run from the repository root: npm ci && forge build",
+      "Extract this JSON reproduction.source to .local/v2/verify-deployment.mjs using a filesystem write",
+      "node .local/v2/verify-deployment.mjs"
+    ],
+    "source": "import { readFileSync, writeFileSync } from 'node:fs';\nimport { fileURLToPath } from 'node:url';\nimport { createPublicClient, http, encodeDeployData, encodeAbiParameters, keccak256, toHex, getContractAddress } from 'viem';\nimport { baseSepolia } from 'viem/chains';\n\n// Read-only: no wallet client, signing, broadcast, source purchase or credential file is used.\nconst rpcUrl = process.env.BASE_SEPOLIA_RPC_URL || 'https://sepolia.base.org';\nconst client = createPublicClient({chain:baseSepolia,transport:http(rpcUrl,{timeout:20000,retryCount:2})});\nconst expectedFactory='0x55f8b95e4ab02550b9758e23187fc366b91f910e';\nconst expectedVerifier='0xa4d6e5D0596f064290d810C1623D3C2114a55624';\nconst expectedAirnode='0x7B02Fd3324D2dC362f65a9c01e59EC5fDb4E1CCB';\nconst deployment=JSON.parse(readFileSync('evidence/v2/deployment.json','utf8'));\nconst isolation=JSON.parse(readFileSync('evidence/v2/isolated-wallets.json','utf8'));\nconst loadArtifact=name=>JSON.parse(readFileSync(`out/PostAndPaidConsentFactory.sol/${name}.json`,'utf8'));\nconst factoryArtifact=loadArtifact('PostAndPaidConsentFactory');\nconst verifierArtifact=loadArtifact('PostAndPaidIntakeVerifier');\nconst checks=[];\nfunction check(name,passed,detail){checks.push({name,passed:!!passed,...(detail===undefined?{}:{detail})});}\nconst same=(a,b)=>typeof a==='string'&&typeof b==='string'&&a.toLowerCase()===b.toLowerCase();\ncheck('deployment file factory address matches requested target',same(deployment.factory.address,expectedFactory));\ncheck('deployment file verifier address matches requested target',same(deployment.factory.verifier,expectedVerifier));\ncheck('deployment file signer matches pinned expected signer',same(deployment.airnode,expectedAirnode));\nconst [chainId,blockNumber]=await Promise.all([client.getChainId(),client.getBlockNumber()]);\ncheck('RPC is Base Sepolia chain84532',chainId===84532);\nconst read=(address,abi,functionName)=>client.readContract({address,abi,functionName,blockNumber});\nconst [tx,receipt,factoryCode,verifierCode,airnode,verifier,verifierAirnode,domain,declaredChain,typeHash,block,balance]=await Promise.all([\n client.getTransaction({hash:deployment.factory.transactionHash}),\n client.getTransactionReceipt({hash:deployment.factory.transactionHash}),\n client.getCode({address:expectedFactory,blockNumber}),client.getCode({address:expectedVerifier,blockNumber}),\n read(expectedFactory,factoryArtifact.abi,'airnode'),read(expectedFactory,factoryArtifact.abi,'intakeVerifier'),\n read(expectedVerifier,verifierArtifact.abi,'airnode'),read(expectedFactory,factoryArtifact.abi,'domainSeparator'),\n read(expectedFactory,factoryArtifact.abi,'CHAIN_ID'),read(expectedFactory,factoryArtifact.abi,'CONSENT_TYPEHASH'),\n client.getBlock({blockNumber}),client.getBalance({address:expectedFactory,blockNumber})\n]);\ncheck('factory deployment receipt succeeded',receipt.status==='success');\ncheck('deployment transaction is contract creation',tx.to===null);\ncheck('receipt created the requested factory',same(receipt.contractAddress,expectedFactory));\ncheck('deployment used isolated V2 executor',same(tx.from,isolation.executor),{sender:tx.from,expectedExecutor:isolation.executor});\ncheck('V2 executor differs from V1 preparation source',!same(tx.from,isolation.source));\ncheck('deployment carried zero creator collateral',tx.value===0n);\nconst expectedInput=encodeDeployData({abi:factoryArtifact.abi,bytecode:factoryArtifact.bytecode.object,args:[expectedAirnode]});\ncheck('factory initcode and constructor argument match exactly',same(tx.input,expectedInput),{actualBytes:(tx.input.length-2)/2,expectedBytes:(expectedInput.length-2)/2,actualHash:keccak256(tx.input),expectedHash:keccak256(expectedInput)});\ncheck('factory pins the expected Airnode',same(airnode,expectedAirnode));\ncheck('factory pins the expected verifier',same(verifier,expectedVerifier));\ncheck('verifier pins the same expected Airnode',same(verifierAirnode,expectedAirnode));\ncheck('verifier is factory first CREATE child',same(getContractAddress({from:expectedFactory,nonce:1n}),expectedVerifier));\ncheck('factory chain constant is84532',declaredChain===84532n);\nconst expectedDomain=keccak256(encodeAbiParameters(\n [{type:'bytes32'},{type:'bytes32'},{type:'bytes32'},{type:'uint256'},{type:'address'}],\n [keccak256(toHex('EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)')),keccak256(toHex('Post and Paid')),keccak256(toHex('2')),84532n,expectedFactory]\n));\ncheck('EIP712 domain binds name/version/chain/factory',same(domain,expectedDomain),{actual:domain,expected:expectedDomain,name:'Post and Paid',version:'2',chainId:84532,verifyingContract:expectedFactory});\nconst creatorType='CreatorConsent(bytes32 agreementId,address brand,address creator,string authorId,string postId,bytes32 nonce,address asset,uint256 feeWei,string requiredText,uint64 postedAfter,uint64 postedBefore,uint64 claimDeadline,uint64 consentDeadline,uint64 maxResponseAge)';\ncheck('all fourteen signed terms match expected type hash',same(typeHash,keccak256(toHex(creatorType))),{actual:typeHash,expected:keccak256(toHex(creatorType)),type:creatorType});\nfunction verifyRuntime(name,artifact,actualHex,expectedRoles){\n if(!actualHex||actualHex==='0x'){check(`${name} has deployed runtime`,false);return {present:false};}\n const actual=Buffer.from(actualHex.slice(2),'hex'),patched=Buffer.from(artifact.deployedBytecode.object.slice(2),'hex');\n check(`${name} runtime length matches compiled artifact`,actual.length===patched.length,{actualBytes:actual.length,compiledBytes:patched.length});\n const expectedWords=Object.fromEntries(Object.entries(expectedRoles).map(([role,address])=>[role,address.slice(2).toLowerCase().padStart(64,'0')]));\n const observations=[];const seenRoles=new Set();\n for(const [id,refs] of Object.entries(artifact.deployedBytecode.immutableReferences||{})){\n  const values=refs.map(ref=>actual.subarray(ref.start,ref.start+ref.length).toString('hex'));\n  const role=Object.keys(expectedWords).find(k=>expectedWords[k]===values[0]);\n  const consistent=values.every(value=>value===values[0]);\n  check(`${name} immutable ${id} matches pinned address`,!!role&&consistent&&refs.every(ref=>ref.length===32),{role:role||'unexpected',value:'0x'+values[0],locations:refs});\n  if(role){seenRoles.add(role);for(const ref of refs)Buffer.from(expectedWords[role],'hex').copy(patched,ref.start);}\n  observations.push({astId:id,role:role||'unexpected',value:'0x'+values[0],locations:refs});\n }\n check(`${name} contains every expected immutable role`,Object.keys(expectedRoles).every(role=>seenRoles.has(role)));\n const exact=patched.equals(actual);\n check(`${name} full runtime matches compiled code with verified immutables`,exact,{actualHash:keccak256(actualHex),expectedPatchedHash:keccak256(toHex(patched))});\n return {address:name==='factory'?expectedFactory:expectedVerifier,runtimeBytes:actual.length,actualRuntimeHash:keccak256(actualHex),compiledPatchedRuntimeHash:keccak256(toHex(patched)),immutableObservations:observations,exactRuntimeMatch:exact};\n}\nconst factoryRuntime=verifyRuntime('factory',factoryArtifact,factoryCode,{airnode:expectedAirnode,intakeVerifier:expectedVerifier});\nconst verifierRuntime=verifyRuntime('verifier',verifierArtifact,verifierCode,{airnode:expectedAirnode});\nconst report={\n checkedAt:new Date().toISOString(),network:{name:'Base Sepolia',chainId,blockNumber:String(blockNumber),blockTimestamp:String(block.timestamp),blockHash:block.hash},\n readOnly:true,noWalletFilesOrSigningClientsUsed:true,transactionsSubmitted:0,paidApiCalls:0,\n deployment:{transactionHash:tx.hash,blockNumber:String(receipt.blockNumber),blockHash:receipt.blockHash,status:receipt.status,from:tx.from,nonce:tx.nonce,contractAddress:receipt.contractAddress,valueWei:String(tx.value),gasUsed:String(receipt.gasUsed)},\n factory:factoryRuntime,verifier:verifierRuntime,expectedSigner:expectedAirnode,observedFactoryBalanceWei:String(balance),\n compiler:{version:factoryArtifact.metadata.compiler.version,evmVersion:factoryArtifact.metadata.settings.evmVersion,optimizer:factoryArtifact.metadata.settings.optimizer},\n passed:checks.every(x=>x.passed),checks,\n creatorPilot:'PENDING \u2014 this deployment verification does not establish a new creator post, funded agreement or payout.',\n contractTiming:{basis:'Source analysis of unchanged V1 child embedded by the verified factory, not a new live creator-pilot transaction.',source:'contracts/PostAndPaidEscrow.sol',condition:'timestamp >= fundedAt',sameSecondIntakeReusePossible:true,strictNewEnvelopeEnforcedOnChain:false,applicationPolicy:'The executor deliberately buys another snapshot after funding; that is an application policy and separately recorded API purchase, not proof that a same-second intake envelope is unusable.'},\n reproduction:{\n  method:'Recompile the repository with forge build, then compare the exact CREATE input and runtime code. Patch only compiler-declared immutable reference words to the pinned addresses, check every occurrence, and require exact equality of the entire resulting runtime. Read expected signer/verifier and EIP712 domain/type hashes from the deployed contracts at one fixed RPC block.',\n  steps:['Run from the repository root: npm ci && forge build','Extract this JSON reproduction.source to .local/v2/verify-deployment.mjs using a filesystem write','node .local/v2/verify-deployment.mjs'],\n  source:readFileSync(fileURLToPath(import.meta.url),'utf8')\n }\n};\nwriteFileSync('evidence/v2/deployment-verification.json',JSON.stringify(report,null,2)+'\\n');\nconsole.log(JSON.stringify({passed:report.passed,checks:checks.length,failed:checks.filter(x=>!x.passed),chainId,blockNumber:String(blockNumber),factoryHash:factoryRuntime.actualRuntimeHash,verifierHash:verifierRuntime.actualRuntimeHash},null,2));\nif(!report.passed)process.exitCode=1;\n"
+  },
+  "noWalletFilesOrSigningClientsUsed": true,
+  "contractTiming": {
+    "basis": "Source analysis of unchanged V1 child embedded by the verified factory, not a new live creator-pilot transaction.",
+    "source": "contracts/PostAndPaidEscrow.sol",
+    "condition": "timestamp >= fundedAt",
+    "sameSecondIntakeReusePossible": true,
+    "strictNewEnvelopeEnforcedOnChain": false,
+    "applicationPolicy": "The executor deliberately buys another snapshot after funding; that is an application policy and separately recorded API purchase, not proof that a same-second intake envelope is unusable."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-31T03:58:56.527326+00:00",
+  "scope": "git tracked plus unignored candidate publish tree; own V1 and V2 actual secret values only",
+  "filesScanned": 141,
+  "secretValuesChecked": 5,
+  "matches": [],
+  "localAndEnvIgnored": true,
+  "passed": true
+}

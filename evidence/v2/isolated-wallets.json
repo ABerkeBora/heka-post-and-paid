@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-31T03:36:17.349Z",
+  "network": "Base Sepolia84532",
+  "source": "0x38AE0A11117D3cd0a86F38EDe2C205aE1842f48d",
+  "executor": "0xccdDf014DBFCc0B3a62cdCC89E2E9D31a5b9F0D2",
+  "creatorTest": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+  "gasAllocationWei": "300000000000000",
+  "apiAllocationUnits": "100000",
+  "transactions": {
+    "v2-gas-allocation": {
+      "hash": "0x22d75bca85a10866376bad7e27fafd2b5eddb14513acfeb387e5227573b7de1e",
+      "status": "success",
+      "gasCostWei": "126000000486"
+    },
+    "v2-api-allocation": {
+      "hash": "0x69eee1ba08059a2c94f9da222ca28e01b4f4a620b290ab29ae16813c463958c5",
+      "status": "success",
+      "gasCostWei": "366624000552"
+    }
+  }
+}

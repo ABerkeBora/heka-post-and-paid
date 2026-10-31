@@ -1,0 +1,13 @@
+{
+  "checkedAtUtc": "2026-10-31T03:55:42Z",
+  "checkedAtEuropeBerlin": "2026-10-31 04:55 CET",
+  "method": "Browser selected API3 tab, expanded About, What to submit, What judges look for and Example ideas; reread How to submit tab.",
+  "selectedTrack": "API3 — Any API in your contract",
+  "urls": ["https://hackathon.tum-blockchain.com/prizes#api3", "https://hackathon.tum-blockchain.com/prizes#how-to-submit"],
+  "changesSinceStartGate": false,
+  "deadline": "2026-10-31 15:00 Europe/Berlin",
+  "mandatory": ["Essential AirnodeHub data in core workflow", "Deployed expected signer, exact request and timing verification", "Meaningful action from signed values and duplicate protection", "Valid action plus edited, stale, wrong-request and wrong-signer rejection evidence", "Judge-supplied proof path", "Public setup/run repository", "At most 150-second video and detailed Devfolio entry"],
+  "judgingPreferenceSeparateFromQualification": "Repeated autonomous paid-data cycles, execution and originality",
+  "v2LivePositivePilot": "PENDING",
+  "videoAndSubmission": "PENDING; not submitted"
+}

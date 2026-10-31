@@ -1,0 +1,113 @@
+{
+  "at": "2026-10-31T03:53:37.696Z",
+  "kind": "Isolated test-wallet signature for browser form QA; no human X-owner consent or pilot claimed.",
+  "typedData": {
+    "domain": {
+      "name": "Post and Paid",
+      "version": "2",
+      "chainId": 84532,
+      "verifyingContract": "0x55f8b95e4ab02550b9758e23187fc366b91f910e"
+    },
+    "types": {
+      "EIP712Domain": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "version",
+          "type": "string"
+        },
+        {
+          "name": "chainId",
+          "type": "uint256"
+        },
+        {
+          "name": "verifyingContract",
+          "type": "address"
+        }
+      ],
+      "CreatorConsent": [
+        {
+          "name": "agreementId",
+          "type": "bytes32"
+        },
+        {
+          "name": "brand",
+          "type": "address"
+        },
+        {
+          "name": "creator",
+          "type": "address"
+        },
+        {
+          "name": "authorId",
+          "type": "string"
+        },
+        {
+          "name": "postId",
+          "type": "string"
+        },
+        {
+          "name": "nonce",
+          "type": "bytes32"
+        },
+        {
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "name": "feeWei",
+          "type": "uint256"
+        },
+        {
+          "name": "requiredText",
+          "type": "string"
+        },
+        {
+          "name": "postedAfter",
+          "type": "uint64"
+        },
+        {
+          "name": "postedBefore",
+          "type": "uint64"
+        },
+        {
+          "name": "claimDeadline",
+          "type": "uint64"
+        },
+        {
+          "name": "consentDeadline",
+          "type": "uint64"
+        },
+        {
+          "name": "maxResponseAge",
+          "type": "uint64"
+        }
+      ]
+    },
+    "primaryType": "CreatorConsent",
+    "message": {
+      "agreementId": "0xe4f04724d0ec7244b505674cbe2c1ea20ec530271a7f2cc0911ba13d176a6ae1",
+      "brand": "0xccdDf014DBFCc0B3a62cdCC89E2E9D31a5b9F0D2",
+      "creator": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+      "authorId": "12",
+      "postId": "20",
+      "nonce": "0x957d41be5689580a68c1f074c3397c063cc92788e2239f8ac09705fab1c0f730",
+      "asset": "0x0000000000000000000000000000000000000000",
+      "feeWei": "10000000000000",
+      "requiredText": "[pap2:957d41be5689580a68c1f074c3397c063cc92788e2239f8ac09705fab1c0f730:0x46cba7a1f74a7fb3d6d83795581edabc03f705bf]",
+      "postedAfter": 1793418709,
+      "postedBefore": 1793443969,
+      "claimDeadline": 1793447569,
+      "consentDeadline": 1793445769,
+      "maxResponseAge": 300
+    }
+  },
+  "signature": "0xb008222987bbe2e42f517618c2d640ea253f1f27cc176746a519125e64826bb95d5128f4bd7cf7c38eceb8c65ae31425d391e393bec3d76792d8ed533b709f891c",
+  "termsHash": "0xae65b75d3fddb95007fe18de561c69361fd28d3069b0c96dd730bc1912cd61bf",
+  "recovered": "0x46cbA7A1f74a7FB3d6D83795581EDabc03F705Bf",
+  "onchainDigest": "0xae65b75d3fddb95007fe18de561c69361fd28d3069b0c96dd730bc1912cd61bf",
+  "funding": false,
+  "payout": false
+}

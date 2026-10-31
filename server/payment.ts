@@ -128,17 +128,22 @@ export async function paidSnapshot(
   intentId: string,
   request: AirnodeV2Request,
   mandate: Mandate,
+  runtime?: {
+    localDir: string;
+    payer: ReturnType<typeof wallets>["deployer"]["account"];
+  },
 ): Promise<{ envelope: SignedResponse; settlement: any; intent: any }> {
   if (
     !/^[a-zA-Z0-9_-]+$/.test(intentId) ||
     !/^[a-zA-Z0-9_-]+$/.test(mandate.id)
   )
     throw new Error("Invalid intent or mandate ID");
-  const path = resolve(LOCAL, "intents", intentId + ".json"),
-    ledgerPath = resolve(LOCAL, "mandates", mandate.id + ".json");
+  const storageRoot = runtime?.localDir || LOCAL;
+  const path = resolve(storageRoot, "intents", intentId + ".json"),
+    ledgerPath = resolve(storageRoot, "mandates", mandate.id + ".json");
   let intent: any = readJson(path);
   const body = JSON.stringify(request),
-    payer = wallets().deployer.account;
+    payer = runtime?.payer || wallets().deployer.account;
   const ledger: any = readJson(ledgerPath) || {
     reservedUnits: "0",
     spentUnits: "0",
@@ -204,6 +209,10 @@ export async function paidSnapshot(
       writeJson(ledgerPath, ledger);
     }
   }
+  if (intent?.mandateId && intent.mandateId !== mandate.id)
+    throw new Error("Intent is bound to another mandate.");
+  if (runtime && intent && !intent.mandateId)
+    throw new Error("Scoped intent is missing its mandate binding.");
   if (intent?.requestBody && intent.requestBody !== body)
     throw new Error("Intent already bound to another request.");
   if (intent?.response !== undefined) {

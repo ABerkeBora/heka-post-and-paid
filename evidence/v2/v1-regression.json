@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-31T03:56:36.455Z",
+  "baselineCommit": "3dac6e4a397c9719c8e05c6639550a0260ce040d",
+  "tag": "v1-baseline",
+  "runtimeFilesPreserved": 7,
+  "sourceAndEvidenceFilesPreserved": 31,
+  "changedFiles": [],
+  "apiStatus": "paid",
+  "contract": "0x7d4f7f937cc3e2f3e39c87418d2c51355100a240",
+  "onchainState": 1,
+  "passed": true
+}

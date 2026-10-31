@@ -1,0 +1,24 @@
+{
+  "checkedAtUtc": "2026-10-31T03:57:00Z",
+  "method": "Production build served on localhost:3106; real IAB/CUA interaction, DOM inspection and screenshots. TasteSkill external inspector replaced by supported CUA APIs.",
+  "v2": {
+    "tested": ["Create challenge with isolated test creator and numeric author ID", "Pin post before consent", "Paste real isolated EOA signature and verify through API plus deployed factory", "Consent-success hash and recovered beneficiary", "Source-negative state with no funding", "Payment trail empty/recorded states", "Challenge-copy action feedback", "Ready intake after archival of only the unfunded browser test"],
+    "viewports": [{"width":1440,"height":900,"overflow":false},{"width":768,"height":1024,"overflow":false},{"width":390,"height":844,"overflow":false}],
+    "font": "DM Sans loaded",
+    "gradients": 0,
+    "smallControlTextBelow12px": 0,
+    "walletExtensionPopupTested": false,
+    "externalSignatureFormTested": true,
+    "clipboardBytesIndependentlyConfirmed": false,
+    "creatorPilot": "PENDING",
+    "newCreatorPayout": false
+  },
+  "v1": {
+    "status": "Previously paid agreement remains visible with three payment receipts and four recorded on-chain rejections; read-only walkthrough.",
+    "viewports": [{"width":1280,"height":720,"overflow":false},{"width":768,"height":1024,"overflow":false},{"width":390,"height":844,"overflow":false}],
+    "economicActions": 0
+  },
+  "screenshots": "evidence/v2/screenshots/",
+  "viewportOverrideReset": true,
+  "finalV2State": "empty, ready for actual creator; test records archived locally without removing chain evidence"
+}
